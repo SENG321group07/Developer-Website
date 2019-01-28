@@ -1,0 +1,321 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	margin:0;
+	background-color: #fcfcfc;
+}
+
+img {
+	align-self: center;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+nav {
+	position: -webkit-sticky; /* Safari */
+    position: fixed;
+    top: 0;
+	width: 100%;
+	background-color: none;
+	text-shadow: 2px 2px 5px black;
+	background-color: rgb(30, 30, 30, 0.4);
+}
+
+nav > div {
+	width: 100%;
+	max-width: 1500px;
+	margin: auto;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	top: 0;
+}
+
+nav > div > div {
+	padding: 0 10px 0 10px;
+	margin: 10px 0 10px;
+	border-right: 2px solid white;
+	color: white;
+}
+
+nav > div > div:last-child {
+	border-right: 0px;
+}
+
+#page-content {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.feature-area {
+    margin: 0 auto 0 auto;
+	text-align: center;
+    padding: 25px 0 25px 0;
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+	align-items: center;
+    min-height: calc(100vh - 50px);
+    font-size: 6vw;
+	background-image: url('images/background.jpg');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-attachment: fixed;
+}
+
+.feature-area #title {
+    background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	text-shadow: 2px 2px 5px black;
+	padding: 15px;
+}
+
+.feature-area #title > div {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.feature-area #sub-heading {
+	max-width: 660px;
+	border-top: 2px solid #111;
+	margin-top: 8px;
+	padding-top: 4px;
+}
+
+@media screen and (min-width: 640px) {
+    .feature-area {
+        font-size: 36px;
+    }
+}
+
+.feature-area > * {
+	text-align: center;
+}
+
+.highlight-area > div {
+	padding: 40px 15px 40px 15px;
+}
+
+.highlight-area #slogan {
+	text-align: center;
+	font-size: 5vw;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.highlight-area #slogan b {
+	color: #2693ea;
+}
+
+@media screen and (min-width: 640px) {
+	.highlight-area #slogan {
+		font-size: 36px;
+	}
+	@media screen and (min-width: 900px) {
+		.highlight-area #slogan {
+			font-size: 50px;
+		}
+	}
+}
+
+.highlight-area .text-image > div {
+	display: flex;
+	flex-flow: row nowrap;
+	max-width: 960px;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.highlight-area .text-image > div > img {
+	width: 40vw;
+}
+
+.highlight-area .text-image > div > div {
+	margin: 0 15px 0 15px;
+	width: 100%;
+	text-align: left;
+	font-size: 3vw;
+}
+
+@media screen and (min-width: 900px) {
+	.highlight-area .text-image > div > img {
+		width: auto;
+		height: auto;
+	}
+	
+	.highlight-area .text-image > div > div {
+		font-size: 23px;
+	}
+}
+
+.highlight-area .title {
+	font-size: 1.2em;
+	margin-bottom: 0.67em;
+	font-weight: bold;
+}
+
+.highlight-area #team{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1100px;
+	text-align: center;
+}
+
+.highlight-area #team .title {
+	font-size: 1.5em;
+}
+
+.highlight-area #team #team-members {
+	text-align: center;
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.highlight-area #team #team-members > div {
+	max-width: 290px;
+    max-height: 300px;
+    margin: 1.5vw;
+    display: inline-block;
+}
+
+.highlight-area #team {
+	font-size: 3.5vw;
+	font-weight: bold;
+}
+
+.highlight-area #team #team-members .role {
+	font-size: 2.8vw;
+}
+
+@media screen and (min-width: 640px) {
+    .highlight-area #team {
+        font-size: 20px;
+    }
+	.highlight-area #team #team-members .role {
+        font-size: 16px;
+		font-weight: normal;
+    }
+}
+
+.dark {
+	background-color: #040404;
+	color: white;
+}
+
+.highlight-area #project-title {
+	text-align: center;
+	font-size: 5vw;
+	font-weight: bold;
+	background-image: url('images/project-background.jpg');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-attachment: fixed;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+@media screen and (min-width: 640px) {
+	.highlight-area #project-title  {
+		font-size: 36px;
+	}
+	@media screen and (min-width: 900px) {
+		.highlight-area #project-title  {
+			font-size: 50px;
+		}
+	}
+}
+
+.highlight-area #project-documents {
+	display: flex;
+	align-items: center;
+}
+
+.highlight-area #project-documents > div {
+	width: 100%;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.highlight-area #contact {
+	text-align: center;
+	font-size: 3.3vw;
+	font-weight: bold;
+}
+
+.highlight-area #contact > div {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	background-color: white;
+	color: black;
+	width: 60vw;
+	height: 60vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+	.highlight-area #contact {
+		font-size: 30px;
+		font-weight: normal;
+	}
+	
+	.highlight-area #contact > div {
+		width: 500px;
+		height: 150px;
+		border-radius: 25px;
+	}
+}
+
+#footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+}
+
+#footer {
+	padding-bottom: 10px;
+}
+
+#footer > * {
+	padding: 20px 0 20px 0;
+}
+
+#footer > #payments {
+	font-size: 22px;
+}
+
+.desktop-show {
+	display: none;
+}
+
+.darkened-background {
+	background-color: rgba(51, 51, 51, 0.4);
+	padding: 15px;
+}
+
+@media screen and (min-width: 830px) {
+	.desktop-show {
+		display: block;
+	}
+}
